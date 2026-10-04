@@ -4,11 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f8f9f6">
-  <meta name="description" content="Jingmin Wang is a machine learning researcher and engineer at the University of Toronto working on reinforcement learning, world models, and computer vision.">
+  <meta name="description" content="Jingmin Wang is a machine learning researcher and engineer at the University of Toronto working on reinforcement learning, world models, planning, and computer vision.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Jingmin Wang — Machine Learning Researcher &amp; Engineer">
-  <meta property="og:description" content="Research in reinforcement learning, world models, and computer vision. Selected work, publications, experience, and projects.">
+  <meta property="og:description" content="Research, publications, engineering projects, and teaching in machine learning.">
   <meta property="og:url" content="https://jingminw.github.io/">
+  <meta property="og:image" content="https://jingminw.github.io/assets/images/headshot.png">
+  <meta property="og:image:alt" content="Portrait of Jingmin Wang">
   <link rel="canonical" href="https://jingminw.github.io/">
   <title>Jingmin Wang — Machine Learning Researcher &amp; Engineer</title>
   <link rel="stylesheet" href="style.css">
@@ -19,40 +21,45 @@
     <div class="header-inner">
       <a class="wordmark" href="#top" aria-label="Jingmin Wang, back to top">Jingmin Wang<span class="wordmark-dot" aria-hidden="true">.</span></a>
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="#about">About</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <a class="header-resume" href="assets/resume.pdf" target="_blank" rel="noopener" aria-label="Open résumé PDF in a new tab">Résumé <span aria-hidden="true">↗</span></a>
+      <a class="header-resume" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open résumé PDF in a new tab">Résumé <span aria-hidden="true">↗</span></a>
     </div>
   </header>
 
   <main id="main">
     <section class="hero container" id="top" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="status-mark" aria-hidden="true"></span> Research &amp; engineering · Toronto, Canada</p>
-        <h1 id="hero-title">Jingmin <em>Wang.</em></h1>
-        <p class="hero-lede">Machine learning researcher and engineer working at the intersection of <strong>reinforcement learning, world models, and computer vision.</strong></p>
-        <p class="hero-context">MSc in Applied Computing at the University of Toronto. I build learning systems that connect rigorous methods with practical results.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="assets/resume.pdf" target="_blank" rel="noopener">View résumé <span aria-hidden="true">↗</span></a>
-          <a class="text-link" href="mailto:jingmin.wang@mail.utoronto.ca">Get in touch <span aria-hidden="true">↗</span></a>
+        <p class="eyebrow">Machine learning · research &amp; engineering</p>
+        <h1 id="hero-title">Jingmin Wang<span class="wordmark-dot" aria-hidden="true">.</span></h1>
+        <p class="hero-role">Machine Learning Researcher &amp; Engineer</p>
+        <p class="hero-intro">I work on reinforcement learning, world models, model-based planning, and computer vision, with a focus on decisions under uncertainty.</p>
+        <p class="hero-affiliation">MSc candidate in Applied Computing <span aria-hidden="true">·</span> University of Toronto</p>
+        <div class="hero-links">
+          <a class="button button-primary" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open résumé PDF in a new tab">Résumé <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/JingminW" target="_blank" rel="noopener noreferrer" aria-label="Jingmin Wang on GitHub, opens in a new tab">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/jingmin-wang" target="_blank" rel="noopener noreferrer" aria-label="Jingmin Wang on LinkedIn, opens in a new tab">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="mailto:jingmin.wang@mail.utoronto.ca">Email <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-      <aside class="hero-aside" aria-label="Research focus">
-        <span class="aside-kicker">Current focus / 2026</span>
-        <p>Learning to plan under uncertainty.</p>
-        <div class="focus-lines" aria-hidden="true"><span></span><span></span><span></span></div>
-        <ul><li>Offline reinforcement learning</li><li>World models &amp; planning</li><li>Computer vision for sensing</li></ul>
-      </aside>
+      <figure class="hero-portrait">
+        <img src="assets/images/headshot.png" width="832" height="752" alt="Portrait of Jingmin Wang" fetchpriority="high">
+      </figure>
     </section>
 
     <div class="content container">
       <section class="section" id="about" aria-labelledby="about-title">
         <div class="section-label">01 / About</div>
         <div class="section-body">
-          <h2 id="about-title">Research that works<br>in the real world.</h2>
+          <h2 id="about-title">What I work on</h2>
           <div class="about-grid">
-            <p>I study how learning systems can make better decisions when data is limited or uncertain. My work spans offline and preference based reinforcement learning, model based planning, and world models.</p>
-            <p>I have also brought machine learning into industrial vision: estimating motion from rolling shutter cameras and building stereo depth models for precision parts. Across research and engineering, I care about careful evaluation, efficient training, and methods that hold up beyond a benchmark.</p>
+            <p>My research asks how learning systems can plan and act when their models or data are uncertain. I study offline and preference-based reinforcement learning, world models, and value-aware planning.</p>
+            <p>In applied ML, I have built computer vision systems for rolling-shutter motion estimation, industrial depth sensing, and image sensors. Across these settings, I care about robust evaluation and efficient implementation.</p>
           </div>
         </div>
       </section>
@@ -60,19 +67,43 @@
       <section class="section" id="research" aria-labelledby="research-title">
         <div class="section-label">02 / Selected research</div>
         <div class="section-body">
-          <div class="section-heading"><h2 id="research-title">Selected research</h2><p>Recent work across sequential decision making and visual sensing.</p></div>
+          <div class="section-heading"><h2 id="research-title">Selected research</h2><p>Planning under uncertainty, from offline data to real-world sensing.</p></div>
           <div class="research-list">
-            <article class="research-item">
-              <div class="item-meta"><span>01</span><span>Offline RL · ICML 2025</span></div>
-              <div class="item-content"><h3>Reflect-then-Plan</h3><p>An uncertainty aware approach to offline model based planning. The method improved performance by approximately 12% over previous state of the art methods in the reported experiments.</p><a class="inline-link" href="https://arxiv.org/pdf/2506.06261" target="_blank" rel="noopener noreferrer" aria-label="Read Reflect-then-Plan paper (PDF, opens in a new tab)">Read paper <span aria-hidden="true">↗</span></a></div>
+            <article class="research-feature">
+              <figure class="figure-frame">
+                <a href="assets/images/reflect-then-plan.png" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size Reflect-then-Plan method diagram in a new tab">
+                  <img src="assets/images/reflect-then-plan.png" width="1822" height="752" loading="lazy" decoding="async" alt="Reflect-then-Plan diagram showing Bayesian belief updates followed by model-based planning">
+                </a>
+                <figcaption>Method overview · select to inspect the full figure</figcaption>
+              </figure>
+              <div class="feature-detail">
+                <div class="feature-meta">Offline reinforcement learning <span>ICML 2025</span></div>
+                <div><h3>Reflect-then-Plan</h3><p>A doubly Bayesian approach that updates beliefs about dynamics from observations before planning. It improved performance by approximately 12% over prior methods in the experiments reported in the résumé.</p><div class="link-row"><a href="https://arxiv.org/abs/2506.06261" target="_blank" rel="noopener noreferrer" aria-label="Read Reflect-then-Plan paper, opens in a new tab">Paper <span aria-hidden="true">↗</span></a></div></div>
+              </div>
             </article>
-            <article class="research-item">
-              <div class="item-meta"><span>02</span><span>Preference based RL · Ongoing</span></div>
-              <div class="item-content"><h3>Planning from preferences</h3><p>A model based approach to learning from preferences, with a sublinear regret bound for its training objective. In reported experiments, it gained roughly 15% in sample efficiency and 10% in success rate over model free baselines.</p><a class="inline-link" href="https://arxiv.org/abs/2606.19328" target="_blank" rel="noopener noreferrer" aria-label="Read preference based reinforcement learning paper (opens in a new tab)">Read paper <span aria-hidden="true">↗</span></a></div>
+            <article class="research-feature">
+              <figure class="figure-frame">
+                <a href="assets/images/ubp2.png" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size UBP2 planning figure in a new tab">
+                  <img src="assets/images/ubp2.png" width="1776" height="888" loading="lazy" decoding="async" alt="UBP2 figure comparing candidate robot trajectories and uncertainty-aware preference planning">
+                </a>
+                <figcaption>Preference planning · select to inspect the full figure</figcaption>
+              </figure>
+              <div class="feature-detail">
+                <div class="feature-meta">Preference-based reinforcement learning <span>Under consideration · ICLR 2027</span></div>
+                <div><h3>UBP2: Uncertainty-Balanced Preference Planning</h3><p>A model-based method that plans with uncertainty in rewards, dynamics, and value. The résumé reports roughly 15% higher sample efficiency and 10% higher success rate than model-free baselines, alongside a sublinear regret bound.</p><div class="link-row"><a href="https://arxiv.org/abs/2606.19328" target="_blank" rel="noopener noreferrer" aria-label="Read UBP2 paper, opens in a new tab">Paper <span aria-hidden="true">↗</span></a></div></div>
+              </div>
             </article>
-            <article class="research-item">
-              <div class="item-meta"><span>03</span><span>Computer vision · ECCV 2026</span></div>
-              <div class="item-content"><h3>Seeing motion through a rolling shutter</h3><p>An optimization based method for estimating the velocity and spin of fast moving spherical objects. It reduced mean absolute error by approximately 15% compared with commercially available methods in the reported evaluation.</p><a class="inline-link" href="https://arxiv.org/pdf/2606.31760v2" target="_blank" rel="noopener noreferrer" aria-label="Read rolling shutter motion estimation paper (PDF, opens in a new tab)">Read paper <span aria-hidden="true">↗</span></a></div>
+            <article class="research-feature">
+              <figure class="figure-frame">
+                <a href="assets/images/rolling-shutter.png" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size rolling-shutter method diagram in a new tab">
+                  <img src="assets/images/rolling-shutter.png" width="1542" height="1018" loading="lazy" decoding="async" alt="Rolling-shutter pipeline from distorted sphere image to feature extraction, back-projected rays, and motion estimation">
+                </a>
+                <figcaption>Motion estimation pipeline · select to inspect the full figure</figcaption>
+              </figure>
+              <div class="feature-detail">
+                <div class="feature-meta">Computer vision <span>ECCV 2026</span></div>
+                <div><h3>Velocity and spin from rolling-shutter images</h3><p>An optimization-based method for estimating a fast-moving sphere’s velocity and spin from camera distortion. It achieved approximately 15% lower mean absolute error than commercially available methods in the reported evaluation.</p><div class="link-row"><a href="https://arxiv.org/abs/2606.31760" target="_blank" rel="noopener noreferrer" aria-label="Read rolling-shutter motion estimation paper, opens in a new tab">Paper <span aria-hidden="true">↗</span></a></div></div>
+              </div>
             </article>
           </div>
         </div>
@@ -81,13 +112,13 @@
       <section class="section" id="experience" aria-labelledby="experience-title">
         <div class="section-label">03 / Experience</div>
         <div class="section-body">
-          <div class="section-heading"><h2 id="experience-title">Experience</h2><p>Research, applied ML, and technical leadership.</p></div>
+          <div class="section-heading"><h2 id="experience-title">Experience</h2><p>Research and industrial machine learning.</p></div>
           <div class="timeline">
-            <article class="timeline-item"><div class="timeline-date"><time datetime="2025-06">Jun 2025</time> — Present</div><div><h3>Machine Learning Researcher</h3><p class="organization">Data Driven Decision Making Lab · University of Toronto</p><p>Researching offline RL and world models for gradient based planning. Built a 200k+ example reasoning benchmark and helped maintain a 20+ algorithm RL codebase while adding seven algorithms.</p></div></article>
-            <article class="timeline-item"><div class="timeline-date"><time datetime="2025-01">Jan 2025</time> — Present</div><div><h3>Reinforcement Learning Researcher</h3><p class="organization">Learning, Embodied Autonomy, and Forecasting Lab · University of Toronto</p><p>Developing model based preference learning and value aware dynamics models for offline RL, with attention to sample efficiency and theoretical guarantees.</p></div></article>
-            <article class="timeline-item"><div class="timeline-date"><time datetime="2024-05">May 2024</time> — <time datetime="2025-05">May 2025</time></div><div><h3>Machine Learning Research Scientist</h3><p class="organization">Seiko Epson Corporation · Toronto</p><p>Developed rolling shutter motion estimation and stereo depth models for industrial parts. A cost volume CNN reached under 2 mm depth error; training optimizations cut model training from days to eight hours.</p></div></article>
+            <article class="timeline-item"><div class="timeline-date"><time datetime="2025-06">Jun 2025</time> — Present</div><div><h3>Machine Learning Researcher</h3><p class="organization">Data Driven Decision Making Lab · University of Toronto</p><p>Researching offline RL and world models for gradient-based planning. Built a 200k+ example reasoning benchmark and added seven algorithms to a shared 20+ algorithm RL codebase.</p></div></article>
+            <article class="timeline-item"><div class="timeline-date"><time datetime="2025-01">Jan 2025</time> — Present</div><div><h3>Reinforcement Learning Researcher</h3><p class="organization">Learning, Embodied Autonomy, and Forecasting Lab · University of Toronto</p><p>Developing model-based preference learning and value-aware dynamics models for offline RL, with attention to sample efficiency and theoretical guarantees.</p></div></article>
+            <article class="timeline-item"><div class="timeline-date"><time datetime="2024-05">May 2024</time> — <time datetime="2025-05">May 2025</time></div><div><h3>Machine Learning Research Scientist</h3><p class="organization">Seiko Epson Corporation · Toronto</p><p>Built rolling-shutter motion estimation and stereo depth models for industrial parts. A cost-volume CNN reached under 2 mm depth error; training optimizations cut runs from days to eight hours.</p></div></article>
             <article class="timeline-item"><div class="timeline-date"><time datetime="2025-01">Jan 2025</time> — <time datetime="2025-06">Jun 2025</time></div><div><h3>Part-time Researcher</h3><p class="organization">Jiying Technology Co. Ltd. · Remote</p><p>Combined graph neural networks and transformers for drug discovery, achieving over 95% accuracy on internal benchmarks. Improved architecture stability and tested robustness to graph noise.</p></div></article>
-            <article class="timeline-item"><div class="timeline-date"><time datetime="2023-05">May 2023</time> — <time datetime="2023-09">Sep 2023</time></div><div><h3>Computer Vision Researcher</h3><p class="organization">Intelligent Sensory Microsystems Lab · University of Toronto</p><p>Developed banded mask patterns for glare reduction and contributed to a software defined image sensor that adapts sensing speed across the scene.</p></div></article>
+            <article class="timeline-item"><div class="timeline-date"><time datetime="2023-05">May 2023</time> — <time datetime="2023-09">Sep 2023</time></div><div><h3>Computer Vision Researcher</h3><p class="organization">Intelligent Sensory Microsystems Lab · University of Toronto</p><p>Developed mask patterns for glare reduction and contributed to a software-defined image sensor that adapts sensing speed across a scene.</p></div></article>
           </div>
         </div>
       </section>
@@ -95,13 +126,13 @@
       <section class="section" id="publications" aria-labelledby="publications-title">
         <div class="section-label">04 / Publications</div>
         <div class="section-body">
-          <div class="section-heading"><h2 id="publications-title">Publications</h2><p>Peer reviewed work and recent manuscripts.</p></div>
+          <div class="section-heading"><h2 id="publications-title">Publications</h2><p>Peer-reviewed work and preprints.</p></div>
           <ol class="publication-list">
-            <li><div><h3><a href="https://arxiv.org/pdf/2606.31760v2" target="_blank" rel="noopener noreferrer">Estimating Velocity and Spin of Spherical Objects from Rolling-Shutter Image(s) <span aria-hidden="true">↗</span></a></h3><p>European Conference on Computer Vision · 2026</p></div></li>
-            <li><div><h3><a href="https://arxiv.org/pdf/2506.06261" target="_blank" rel="noopener noreferrer">Reflect-then-Plan: Offline Model-Based Planning through a Doubly Bayesian Lens <span aria-hidden="true">↗</span></a></h3><p>International Conference on Machine Learning · 2025</p></div></li>
-            <li><div><h3><a href="https://arxiv.org/abs/2606.19328" target="_blank" rel="noopener noreferrer">UBP2: Uncertainty-Balanced Preference Planning for Efficient Preference-based Reinforcement Learning <span aria-hidden="true">↗</span></a></h3><p>Under consideration at ICLR 2027</p></div></li>
-            <li><div><h3>Graph Network-Based Analysis of Disease-Gene-Drug Associations: Zero-Shot Disease-Drug Prediction and Analysis Strategies</h3><p>bioRxiv · 2024</p></div></li>
-            <li><div><h3><a href="https://ieeexplore.ieee.org/document/10631335" target="_blank" rel="noopener noreferrer">23,000-Exposures/s 360fps-Readout Software-Defined Image Sensor with Motion-Adaptive Spatially Varying Imaging Speed <span aria-hidden="true">↗</span></a></h3><p>IEEE Symposium on VLSI Technology and Circuits · 2024</p></div></li>
+            <li><div><h3>Estimating Velocity and Spin of Spherical Objects from Rolling-Shutter Image(s)</h3><p class="authors">Wenjie Xue, Jun Yang, <strong>Jingmin Wang</strong>, Limin Shang</p><p class="publication-venue">European Conference on Computer Vision · 2026</p><a href="https://arxiv.org/abs/2606.31760" target="_blank" rel="noopener noreferrer" aria-label="Read rolling-shutter paper, opens in a new tab">Paper ↗</a></div></li>
+            <li><div><h3>Reflect-then-Plan: Offline Model-Based Planning through a Doubly Bayesian Lens</h3><p class="authors">Jihwan Jeong, Xiaoyu Wang, <strong>Jingmin Wang</strong>, Scott Sanner, Pascal Poupart</p><p class="publication-venue">International Conference on Machine Learning · 2025</p><a href="https://proceedings.mlr.press/v267/jeong25a.html" target="_blank" rel="noopener noreferrer" aria-label="Read Reflect-then-Plan paper, opens in a new tab">Paper ↗</a></div></li>
+            <li><div><h3>UBP2: Uncertainty-Balanced Preference Planning for Efficient Preference-based Reinforcement Learning</h3><p class="authors">Mohamed Nabail, Leo Kaixuan Cheng, <strong>Jingmin Wang</strong>, Nicholas Rhinehart</p><p class="publication-venue">Under consideration at ICLR 2027</p><a href="https://arxiv.org/abs/2606.19328" target="_blank" rel="noopener noreferrer" aria-label="Read UBP2 preprint, opens in a new tab">Paper ↗</a></div></li>
+            <li><div><h3>Graph Network-Based Analysis of Disease-Gene-Drug Associations: Zero-Shot Disease-Drug Prediction and Analysis Strategies</h3><p class="authors">Yinbo Liu, Guodong Niu, Siqi Wu, <strong>Jingmin Wang</strong>, Hesong Qiu, Wen Zhang</p><p class="publication-venue">bioRxiv · 2024</p><a href="https://doi.org/10.1101/2024.12.30.630746" target="_blank" rel="noopener noreferrer" aria-label="Read disease-gene-drug preprint, opens in a new tab">Paper ↗</a></div></li>
+            <li><div><h3>23,000-Exposures/s 360fps-Readout Software-Defined Image Sensor with Motion-Adaptive Spatially Varying Imaging Speed</h3><p class="authors">Roberto Rangel, Xiaonong Sun, Ayandev Barman, Rahul Gulve, Savo Bajic, <strong>Jingmin Wang</strong>, Harry Wang, David B. Lindell, Kiriakos N. Kutulakos, Roman Genov</p><p class="publication-venue">IEEE Symposium on VLSI Technology and Circuits · 2024</p><a href="https://ieeexplore.ieee.org/document/10631335" target="_blank" rel="noopener noreferrer" aria-label="Read software-defined image sensor paper, opens in a new tab">Paper ↗</a></div></li>
           </ol>
         </div>
       </section>
@@ -109,35 +140,59 @@
       <section class="section" id="projects" aria-labelledby="projects-title">
         <div class="section-label">05 / Selected projects</div>
         <div class="section-body">
-          <div class="section-heading"><h2 id="projects-title">Selected projects</h2><p>Ideas carried through to working systems.</p></div>
+          <div class="section-heading"><h2 id="projects-title">Selected projects</h2><p>Algorithms built into working systems.</p></div>
           <div class="project-list">
-            <article class="project-item"><div class="project-topline"><span>Multi-agent systems · 2026</span><a href="https://github.com/JingminW/Robust-Scalable-Nash-Equilibrium-Seeking-Algorithms/blob/main/poster.pdf" target="_blank" rel="noopener noreferrer" aria-label="View Nash equilibrium project poster (PDF, opens in a new tab)">Project poster <span aria-hidden="true">↗</span></a></div><h3>Robust Nash equilibrium seeking</h3><p>Built a decentralized algorithm for adversarial, time varying networks. A geometric median filter reduced equilibrium error by over 100,000× against baselines in high agent settings. Awarded a Certificate of Distinction at the 2026 Capstone Design Fair.</p></article>
-            <article class="project-item"><div class="project-topline"><span>Reasoning benchmarks · 2025–2026</span></div><h3>A 1D reasoning benchmark</h3><p>Created a 200k+ example reasoning benchmark with composable function primitives and a documented framework for training and evaluating transformer models.</p></article>
-            <article class="project-item"><div class="project-topline"><span>Teaching &amp; leadership · 2022–2026</span><a href="https://www.youtube.com/watch?v=WNIE8l9IFGo" target="_blank" rel="noopener noreferrer" aria-label="Watch sample reinforcement learning lecture on YouTube (opens in a new tab)">Sample lecture <span aria-hidden="true">↗</span></a></div><h3>Reinforcement learning education</h3><p>Led annual lecture series and workshops for hundreds of students through the University of Toronto Machine Intelligence Student Team, and organized the university’s first reinforcement learning competition.</p></article>
+            <article class="project-feature">
+              <figure class="figure-frame">
+                <a href="assets/images/nash-equilibrium.png" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size Nash equilibrium algorithm diagram in a new tab"><img src="assets/images/nash-equilibrium.png" width="2070" height="666" loading="lazy" decoding="async" alt="Decentralized Nash equilibrium pipeline with adversarial filtering, gradient update, projection, and broadcast"></a>
+                <figcaption>Algorithm overview · select to inspect the full figure</figcaption>
+              </figure>
+              <div class="project-content"><p class="project-tag">Multi-agent systems · 2026</p><h3>Robust Nash equilibrium seeking</h3><p>A decentralized algorithm for time-varying networks with adversarial communication. Geometric-median filtering reduced equilibrium error by over 100,000× against baselines in high-agent settings. The project earned a Certificate of Distinction at the 2026 Capstone Design Fair.</p><div class="link-row"><a href="https://github.com/JingminW/Robust-Scalable-Nash-Equilibrium-Seeking-Algorithms/blob/main/poster.pdf" target="_blank" rel="noopener noreferrer" aria-label="View Nash equilibrium project poster, opens in a new tab">Poster ↗</a><a href="https://github.com/JingminW/Robust-Scalable-Nash-Equilibrium-Seeking-Algorithms" target="_blank" rel="noopener noreferrer" aria-label="View Nash equilibrium project code on GitHub, opens in a new tab">Code ↗</a></div></div>
+            </article>
+            <article class="project-feature">
+              <figure class="figure-frame">
+                <a href="assets/images/CitySense.png" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size CitySense interface screenshot in a new tab"><img src="assets/images/CitySense.png" width="1662" height="950" loading="lazy" decoding="async" alt="CitySense desktop map showing a route through Toronto and turn-by-turn directions"></a>
+                <figcaption>CitySense interface · select to inspect the full image</figcaption>
+              </figure>
+              <div class="project-content"><p class="project-tag">Geographic information systems · GTK+ / Glade</p><h3>CitySense: Accessible interactive maps</h3><p>Built a map application covering more than a dozen cities, with display support for eight forms of color blindness. Its vehicle-routing solver combined 2-opt optimization with simulated annealing and placed 3rd among 91 teams in a pickup-and-delivery challenge.</p></div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="education" aria-labelledby="education-title">
-        <div class="section-label">06 / Education</div>
+      <section class="section" id="teaching" aria-labelledby="teaching-title">
+        <div class="section-label">06 / Teaching &amp; leadership</div>
         <div class="section-body">
-          <div class="section-heading"><h2 id="education-title">Education</h2></div>
+          <div class="section-heading"><h2 id="teaching-title">Teaching &amp; leadership</h2><p>Five years with the University of Toronto Machine Intelligence Student Team.</p></div>
+          <ol class="teaching-timeline">
+            <li class="teaching-year"><div class="year-marker"><time datetime="2021">2021</time></div><div class="teaching-content"><p class="teaching-role">Project Developer</p><h3>PhotograFirst</h3><p>Joined UTMIST as a project developer on PhotograFirst.</p></div></li>
+            <li class="teaching-year"><div class="year-marker"><time datetime="2022">2022</time></div><div class="teaching-content"><p class="teaching-role">Project Director</p><h3>Reinforcement Learning for Finance</h3><p>Led a team of 8–10 developers building a reinforcement learning and natural language processing framework for real-time foreign-exchange and commodity trading.</p></div></li>
+            <li class="teaching-year"><div class="year-marker"><time datetime="2023">2023</time></div><div class="teaching-content"><p class="teaching-role">Academic Director &amp; Lecturer in Reinforcement Learning</p><h3>The first lecture series</h3><p>Conducted the first student-led reinforcement learning lecture series at the University of Toronto, introducing students to core methods from foundational concepts to policy gradients.</p></div></li>
+            <li class="teaching-year"><div class="year-marker"><time datetime="2024">2024</time></div><div class="teaching-content"><p class="teaching-role">Academic Director &amp; Lecturer in Reinforcement Learning</p><h3>Building the curriculum</h3><p>Delivered another reinforcement learning lecture series through UTMIST.</p><div class="media-preview"><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLbuhT9fUzXkU" title="2024 UTMIST reinforcement learning lecture series playlist" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe></div><a href="https://youtube.com/playlist?list=PLbuhT9fUzXkU&amp;si=whxZLXYLtRm0bn3W" target="_blank" rel="noopener noreferrer" aria-label="Open 2024 reinforcement learning lecture series on YouTube in a new tab">2024 lecture series ↗</a></div></div></li>
+            <li class="teaching-year"><div class="year-marker"><time datetime="2025">2025</time></div><div class="teaching-content"><p class="teaching-role">Academic Director &amp; Lecturer in Reinforcement Learning</p><h3>Lectures and competition</h3><p>Organized the University of Toronto’s first reinforcement learning competition and delivered its opening address, alongside another lecture series.</p><div class="media-grid"><div class="media-preview"><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLXrQMUexJaHrY2OWMZKpSaiRdTf0-jhU7" title="2025 UTMIST reinforcement learning lecture series playlist" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe></div><a href="https://youtube.com/playlist?list=PLXrQMUexJaHrY2OWMZKpSaiRdTf0-jhU7&amp;si=Ju4pkSXZUYJFL24Q" target="_blank" rel="noopener noreferrer" aria-label="Open 2025 reinforcement learning lecture series on YouTube in a new tab">2025 lecture series ↗</a></div><div class="media-preview"><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/rUGAEJtVCGE" title="UTMIST reinforcement learning competition final" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe></div><a href="https://www.youtube.com/watch?v=rUGAEJtVCGE" target="_blank" rel="noopener noreferrer" aria-label="Open reinforcement learning competition final on YouTube in a new tab">Competition final ↗</a></div></div></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="education" aria-labelledby="education-title">
+        <div class="section-label">07 / Education</div>
+        <div class="section-body">
+          <h2 id="education-title">Education</h2>
           <div class="education-list">
             <div class="education-item"><div><h3>Master of Science in Applied Computing</h3><p>University of Toronto</p></div><span><time datetime="2026-09">2026</time>–<time datetime="2028-05">2028</time></span></div>
-            <div class="education-item"><div><h3>Bachelor of Applied Science in Computer Engineering</h3><p>University of Toronto · Minor in Artificial Intelligence · GPA 3.95/4.0</p></div><span><time datetime="2021-09">2021</time>–<time datetime="2026-05">2026</time></span></div>
+            <div class="education-item"><div><h3>Bachelor of Applied Science in Computer Engineering</h3><p>University of Toronto · Minor in AI · GPA 3.95/4.0</p></div><span><time datetime="2021-09">2021</time>–<time datetime="2026-05">2026</time></span></div>
           </div>
           <p class="education-note">Dean’s Honour List for six consecutive semesters · University of Toronto Excellence Award (2023, 2025)</p>
         </div>
       </section>
 
       <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="section-label">07 / Contact</div>
+        <div class="section-label">08 / Contact</div>
         <div class="section-body">
-          <p class="eyebrow">Open to research &amp; engineering conversations</p>
-          <h2 id="contact-title">Let’s connect.</h2>
-          <p>Interested in reinforcement learning, world models, or applied machine learning? I’d be glad to hear from you.</p>
+          <h2 id="contact-title">Get in touch</h2>
+          <p>For research and engineering conversations, reach me by email or connect through the links below.</p>
           <a class="contact-email" href="mailto:jingmin.wang@mail.utoronto.ca">jingmin.wang@mail.utoronto.ca <span aria-hidden="true">↗</span></a>
-          <div class="contact-links"><a href="https://github.com/JingminW" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/jingmin-wang" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="assets/resume.pdf" target="_blank" rel="noopener">Résumé PDF <span aria-hidden="true">↗</span></a></div>
+          <div class="contact-links"><a href="https://github.com/JingminW" target="_blank" rel="noopener noreferrer" aria-label="Jingmin Wang on GitHub, opens in a new tab">GitHub ↗</a><a href="https://www.linkedin.com/in/jingmin-wang" target="_blank" rel="noopener noreferrer" aria-label="Jingmin Wang on LinkedIn, opens in a new tab">LinkedIn ↗</a><a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open résumé PDF in a new tab">Résumé PDF ↗</a></div>
         </div>
       </section>
     </div>
